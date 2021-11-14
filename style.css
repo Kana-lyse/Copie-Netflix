@@ -71,6 +71,12 @@ nav .droite p{
 .img {
     height: 140px;
     width: 280px;
+    min-width: 140px;
+    min-height: 70px;
+}
+
+.img:hover {
+    transform: scale(1.05);
 }
 
 
@@ -86,3 +92,37 @@ h2 {
 
 /* Fin des paramètres des titres */
 /* Fin des films et séries */
+/* Fin de la partie Header */
+
+/* ************************Pied de page ************************** */
+footer{
+    background-color: #1a1a1a;
+    padding: 10px 100px;
+    margin: 0;
+    color: #a08e8e;
+}
+footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .colonnes .colonne p:hover{
+    transform:scale(1.10);
+    cursor: pointer;
+}
+/* Fin du pied de page */
+
+/* Format responsif pour téléphone */
+@media screen and (max-width: 640px){
+    body .page{
+        margin: 10px;
+    }
+    nav .onglets{
+        display: none;
+    }
+    header h1{
+        font-size: 30px;
+        padding: 100px;
+    }
+}
